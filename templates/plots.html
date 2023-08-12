@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iris Species Variety</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+
+  #navey {
+    background-color: #b1dcf9;
+    border-bottom: navy 2px solid;
+  }
+  #homey,#classy,#dashy {
+    color: navy;
+  }
+  
+  #homey {
+    opacity: 0.45;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+</style>
+    </head>
+<body>  <nav class="navbar navbar-expand-lg navbar-light" id="navey">
+  <a class="navbar-brand" id="classy" href="/home">Iris Classification</a>
+ 
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" id="homey" href="{{ url_for('home') }}" >Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" id="dashy" href="">Dashboard</a>
+    </div>
+ 
+          </nav>
+  <img src="{{url_for('static', filename='iris_dashboard.jpg')}}"  />
+</body>
+  </html>
